@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102f5d">
+  <title>خريطة الخزائن | جامعة القصيم</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="العودة إلى الصفحة الرئيسية">
+      <span class="brand-mark" aria-hidden="true">خ</span>
+      <span class="brand-copy">
+        <strong>خزانتي</strong>
+        <small>خريطة خزائن جامعة القصيم</small>
+      </span>
+    </a>
+    </img src="logo.png" alt="شعار تطبيق LOCKA" class="LOCKA-logo">
+    
+
+    <span class="university-name">جامعة القصيم</span>
+  </header> 
+
+  <main class="page-content">
+    <section class="intro">
+      <p class="eyebrow">خريطة الخزائن</p>
+      <h1>اختاري كليتك وخزانتك</h1>
+      <p class="intro-text">
+        استعرضي مواقع الخزائن وحالتها في كليات الرس.
+      </p>
+    </section>
+
+    <!-- اختيار الكلية يعمل باستخدام HTML وCSS فقط -->
+    <input class="college-radio" type="radio" name="college"
+           id="college-science" checked>
+    <input class="college-radio" type="radio" name="college"
+           id="college-literary">
+
+    <div class="college-switch" role="group" aria-label="اختيار الكلية">
+      <label class="college-tab" for="college-science">
+        الكلية العلمية بالرس
+      </label>
+      <label class="college-tab" for="college-literary">
+        الكلية الأدبية بالرس
+      </label>
+    </div>
+
+    <div class="map-content">
+      <section class="college-map science-map"
+               aria-labelledby="science-title">
+        <div class="map-heading">
+          <div>
+            <p class="eyebrow">موقع الخزائن</p>
+            <h2 id="science-title">الكلية العلمية بالرس</h2>
+          </div>
+          <span class="floor-label">الدور الأرضي</span>
+        </div>
+
+        <div class="map-panel">
+          <div class="map-caption">
+            <span class="map-dot" aria-hidden="true"></span>
+            <span>منطقة الخزائن — نموذج مبدئي</span>
+          </div>
+
+          <div class="locker-grid" aria-label="خزائن الكلية العلمية">
+            <label class="locker available">
+              <input type="radio" name="science-locker" value="S01">
+              <span class="locker-card">
+                <span class="locker-number">01</span>
+                <span class="locker-status">متاحة</span>
+              </span>
+            </label>
+            <label class="locker available">
+              <input type="radio" name="science-locker" value="S02">
+              <span class="locker-card">
+                <span class="locker-number">02</span>
+                <span class="locker-status">متاحة</span>
+              </span>
+            </label>
+            <label class="locker reserved">
+              <span class="locker-card">
+                <span class="locker-number">03</span>
+                <span class="locker-status">محجوزة</span>
+              </span>
+            </label>
+            <label class="locker available">
+              <input type="radio" name="science-locker" value="S04">
+              <span class="locker-card">
+                <span class="locker-number">04</span>
+                <span class="locker-status">متاحة</span>
+              </span>
+            </label>
+            <label class="locker available">
+              <input type="radio" name="science-locker" value="S05">
+              <span class="locker-card">
+                <span class="locker-number">05</span>
+                <span class="locker-status">متاحة</span>
+              </span>
+            </label>
+            <label class="locker unavailable">
+              <span class="locker-card">
+                <span class="locker-number">06</span>
+                <span class="locker-status">غير متاحة</span>
+              </span>
+            </label>
+            <label class="locker available">
+              <input type="radio" name="science-locker" value="S07">
+              <span class="locker-card">
+                <span class="locker-number">07</span>
+                <span class="locker-status">متاحة</span>
+              </span>
+            </label>
+            <label class="locker reserved">
+              <span class="locker-card">
+                <span class="locker-number">08</span>
+                <span class="locker-status">محجوزة</span>
+              </span>
+            </label>
+          </div>
+
+          <div class="map-legend" aria-label="دليل حالات الخزائن">
+            <span><i class="legend-dot available-dot"></i>متاحة</span>
+            <span><i class="legend-dot reserved-dot"></i>محجوزة</span>
+            <span><i class="legend-dot unavailable-dot"></i>غير متاحة</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="college-map literary-map"
+               aria-labelledby="literary-title">
+        <div class="map-heading">
+          <div>
+            <p class="eyebrow">موقع الخزائن</p>
+            <h2 id="literary-title">الكلية الأدبية بالرس</h2>
+          </div>
+          <span class="floor-label">الدور الأرضي</span>
+        </div>
+
+        <div class="map-panel">
+          <div class="map-caption">
+            <span class="map-dot" aria-hidden="true"></span>
+            <span>منطقة الخزائن — نموذج مبدئي</span>
+          </div>
+
+          <div class="locker-grid" aria-label="خزائن الكلية الأدبية">
+            <label class="locker available">
+              <input type="radio" name="literary-locker" value="L01">
+              <span class="locker-card">
+                <span class="locker-number">01</span>
+                <span class="locker-status">متاحة</span>
+              </span>
+            </label>
+            <label class="locker reserved">
+              <span class="locker-card">
+                <span class="locker-number">02</span>
+                <span class="locker-status">محجوزة</span>
+              </span>
+            </label>
+            <label class="locker available">
+              <input type="radio" name="literary-locker" value="L03">
+              <span class="locker-card">
+                <span class="locker-number">03</span>
+                <span class="locker-status">متاحة</span>
+              </span>
+            </label>
+            <label class="locker available">
+              <input type="radio" name="literary-locker" value="L04">
+              <span class="locker-card">
+                <span class="locker-number">04</span>
+                <span class="locker-status">متاحة</span>
+              </span>
+            </label>
+            <label class="locker unavailable">
+              <span class="locker-card">
+                <span class="locker-number">05</span>
+                <span class="locker-status">غير متاحة</span>
+              </span>
+            </label>
+            <label class="locker available">
+              <input type="radio" name="literary-locker" value="L06">
+              <span class="locker-card">
+                <span class="locker-number">06</span>
+                <span class="locker-status">متاحة</span>
+              </span>
+            </label>
+            <label class="locker reserved">
+              <span class="locker-card">
+                <span class="locker-number">07</span>
+                <span class="locker-status">محجوزة</span>
+              </span>
+            </label>
+            <label class="locker available">
+              <input type="radio" name="literary-locker" value="L08">
+              <span class="locker-card">
+                <span class="locker-number">08</span>
+                <span class="locker-status">متاحة</span>
+              </span>
+            </label>
+          </div>
+
+          <div class="map-legend" aria-label="دليل حالات الخزائن">
+            <span><i class="legend-dot available-dot"></i>متاحة</span>
+            <span><i class="legend-dot reserved-dot"></i>محجوزة</span>
+            <span><i class="legend-dot unavailable-dot"></i>غير متاحة</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <p class="prototype-note">
+      الخريطة والأرقام والحالات المعروضة تجريبية، وتُحدّث حسب توزيع الخزائن الفعلي.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <span>مشروع حجز الخزائن</span>
+    <span>جامعة القصيم — كليات الرس</span>
+  </footer>
+</body>
+</html>
